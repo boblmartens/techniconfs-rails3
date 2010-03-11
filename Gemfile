@@ -6,6 +6,8 @@ gem "rails", "3.0.0.beta"
 gem "mongo"
 gem "mongo_ext"
 gem "mongo_mapper"
+gem "haml"
+gem "rails3-generators"
 
 ## Bundle edge rails:
 # gem "rails", :git => "git://github.com/rails/rails.git"
@@ -22,6 +24,7 @@ gem "mongo_mapper"
 
 ## Bundle gems used only in certain environments:
 # gem "rspec", :group => :test
-# group :test do
-#   gem "webrat"
-# end
+group :test do
+  gem "factory_girl"
+  gem "shoulda"
+end
