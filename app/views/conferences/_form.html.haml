@@ -1,0 +1,20 @@
+- form_for @conference do |f|
+  = f.error_messages
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :venue_name
+    = f.text_field :venue_name
+  .field
+    = f.label :address
+    = f.text_field :address
+  .field
+    = f.label :start_date
+    = f.text_field :start_date
+  .field
+    = f.label :days
+    = f.text_field :days
+  .actions
+    = f.submit 'Save'

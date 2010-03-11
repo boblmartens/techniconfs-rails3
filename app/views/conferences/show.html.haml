@@ -1,0 +1,19 @@
+%p
+  %b Name:
+  = @conference.name
+%p
+  %b Venue name:
+  = @conference.venue_name
+%p
+  %b Address:
+  = @conference.address
+%p
+  %b Start date:
+  = @conference.start_date
+%p
+  %b Days:
+  = @conference.days
+
+= link_to 'Edit', edit_conference_path(@conference)
+\|
+= link_to 'Back', conferences_path

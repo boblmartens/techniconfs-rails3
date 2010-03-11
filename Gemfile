@@ -8,6 +8,7 @@ gem "mongo_ext"
 gem "mongo_mapper"
 gem "haml"
 gem "rails3-generators"
+gem "chronic"
 
 ## Bundle edge rails:
 # gem "rails", :git => "git://github.com/rails/rails.git"

@@ -36,7 +36,7 @@ module Techniconfs
     config.generators do |g|
       g.orm             :mongomapper
       g.template_engine :haml
-      g.test_framework  :test_unit, :factory_girl
+      # g.test_framework  :test_unit, :factory_girl
     end
 
     # Configure sensitive parameters which will be filtered from the log file.
