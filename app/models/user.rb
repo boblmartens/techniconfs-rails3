@@ -1,6 +1,6 @@
 require 'chronic'
 
-class Conference
+class User
   include MongoMapper::Document
   
   before_save :run_chronic_on_dates
@@ -22,20 +22,16 @@ class Conference
   # after_create :your_model_method
   # before_upate :your_model_method
   
-  key :name, String
+  key :email, String
   key :homepage, String
-  key :venue_name, String
-  key :address, String
-  key :start_date, String
-  key :days, Integer
-  key :price, Integer
-  key :status, String
+  key :name, String
+  key :birthday, String
   
   
   protected
   
   def run_chronic_on_dates
-    self.start_date = Chronic.parse(self.start_date)
+    self.birthday = Chronic.parse(self.birthday)
   end
   
   

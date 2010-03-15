@@ -1,0 +1,14 @@
+development:
+  adapter: mongodb
+  host: localhost:28017
+  database: technicasts_dev
+ 
+test:
+  adapter: mongodb
+  host: localhost:28017
+  database: technicasts_test
+ 
+production:
+  adapter: mongodb
+  host: localhost:28017
+  database: technicasts

@@ -5,6 +5,9 @@
     = f.label :name
     = f.text_field :name
   .field
+    = f.label :homepage
+    = f.text_field :homepage
+  .field
     = f.label :venue_name
     = f.text_field :venue_name
   .field
@@ -16,5 +19,8 @@
   .field
     = f.label :days
     = f.text_field :days
+  .field
+    = f.label :price
+    = f.text_field :price
   .actions
     = f.submit 'Save'
