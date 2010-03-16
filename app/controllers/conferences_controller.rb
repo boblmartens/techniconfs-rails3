@@ -1,4 +1,6 @@
 class ConferencesController < ApplicationController
+  before_filter :authenticate, :only => "new"
+  
   # GET /conferences
   # GET /conferences.xml
   def index

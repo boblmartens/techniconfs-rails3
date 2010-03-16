@@ -9,6 +9,7 @@ gem "mongo_mapper"
 gem "haml"
 gem "rails3-generators"
 gem "chronic"
+gem "bcrypt-ruby"
 
 ## Bundle edge rails:
 # gem "rails", :git => "git://github.com/rails/rails.git"
