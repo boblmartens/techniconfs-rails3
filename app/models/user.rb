@@ -11,7 +11,7 @@ class User
   
   timestamps!
   
-  # validates_presense_of :email
+  validates_presence_of :email
   validates_confirmation_of :password
   
   # Validations :::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -36,8 +36,15 @@ class User
   attr_accessor :password
   
   def self.authenticated?(email, password)
-    pwd = Password.create(password.to_s)
-    u = User.all( { :email => email.to_s, :hashed_password => pwd } ).first
+    if @user = User.first(:email => email)
+      if Password.new(@user.hashed_password) == password
+        return @user
+      else
+        nil
+      end
+    else
+      return nil
+    end
   end
   
   protected
