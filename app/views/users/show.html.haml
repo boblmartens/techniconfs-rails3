@@ -2,17 +2,14 @@
   %b Name:
   = @user.name
 %p
-  %b Venue name:
-  = @user.venue_name
+  %b Email:
+  = @user.email
 %p
-  %b Address:
-  = @user.address
+  %b Homepage:
+  = @user.homepage
 %p
-  %b Start date:
-  = @user.start_date
-%p
-  %b Days:
-  = @user.days
+  %b Birthday:
+  = @user.birthday
 
 = link_to 'Edit', edit_user_path(@user)
 \|
