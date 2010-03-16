@@ -10,6 +10,8 @@ gem "haml"
 gem "rails3-generators"
 gem "chronic"
 gem "bcrypt-ruby"
+# gem "carrierwave"
+gem "gravtastic"
 
 ## Bundle edge rails:
 # gem "rails", :git => "git://github.com/rails/rails.git"

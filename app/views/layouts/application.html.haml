@@ -3,6 +3,8 @@
   %head
     %title= "Techniconfs:#{controller.action_name}"
     = stylesheet_link_tag 'scaffold'
+    = javascript_include_tag 'jquery-1.4.2.min', 'rails'
+    = csrf_meta_tag
   %body
     %p.notice= notice
     = yield

@@ -1,9 +1,13 @@
 require 'chronic'
 require 'bcrypt'
+require 'gravtastic'
 
 class User
   include MongoMapper::Document
   include BCrypt
+  include Gravtastic
+  
+  is_gravtastic!
   
   before_save :run_chronic_on_dates, :encrypt_password
 
