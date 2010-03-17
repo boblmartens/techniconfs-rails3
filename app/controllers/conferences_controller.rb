@@ -1,5 +1,5 @@
 class ConferencesController < ApplicationController
-  before_filter :authenticate, :only => "new"
+  before_filter :authenticate, :only => [:new, :edit, :destroy]
   
   # GET /conferences
   # GET /conferences.xml

@@ -1,9 +1,11 @@
 require 'chronic'
+require 'carrierwave/orm/mongomapper'
 
 class Conference
   include MongoMapper::Document
   
   before_save :run_chronic_on_dates
+  mount_uploader :teaser, TeaserUploader
 
   key :key, String                  
   
@@ -30,6 +32,7 @@ class Conference
   key :days, Integer
   key :price, Integer
   key :status, String
+  key :teaser, String
   
   
   protected
