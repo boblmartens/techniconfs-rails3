@@ -1,5 +1,4 @@
 require 'chronic'
-require 'bcrypt'
 require 'gravtastic'
 
 class User

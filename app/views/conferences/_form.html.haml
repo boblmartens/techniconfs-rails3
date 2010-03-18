@@ -1,9 +1,13 @@
-- form_for @conference do |f|
+= form_for @conference, :html => { :multipart => true } do |f|
   = f.error_messages
 
   .field
     = f.label :name
     = f.text_field :name
+  .field
+    = f.label :teaser
+    = f.file_field :teaser
+    = f.hidden_field :teaser_cache
   .field
     = f.label :homepage
     = f.text_field :homepage

@@ -1,19 +1,19 @@
 # Edit this Gemfile to bundle your application's dependencies.
 source 'http://gemcutter.org'
 
+## Bundle edge rails:
+gem "rails", :git => "git://github.com/rails/rails.git"
+
 # gem "rails", "3.0.0.beta"
 gem "mongo"
 gem "mongo_ext"
-gem "mongo_mapper"
-gem "haml"
+gem "mongo_mapper", :git => "git://github.com/fredwu/mongomapper.git"
+gem "haml", :git => "git://github.com/nex3/haml.git"
 gem "rails3-generators"
 gem "chronic"
-gem "bcrypt-ruby"
+gem "bcrypt-ruby", :require => "bcrypt"
 gem "carrierwave", :git => "git://github.com/jnicklas/carrierwave.git"
 gem "gravtastic"
-
-## Bundle edge rails:
-gem "rails", :git => "git://github.com/rails/rails.git"
 
 # ActiveRecord requires a database adapter. By default,
 # Rails has selected sqlite3.
